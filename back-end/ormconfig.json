@@ -1,0 +1,25 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "",
+    "database": "banco_test",
+    "synchrinize": true,
+    "logging": false,
+    "migrationsTableName": "migrations",
+    "entities": [
+        "src/entities/**/*.js"
+    ],
+    "migrtions": [
+        "src/migration/**/*.js"
+    ],
+    "subscribers": [
+        "src/subscribers/**/*.js"
+    ],
+    "cli": {
+        "entitiesDir": "src/entity",
+        "migrationsDir": "src/migration",
+        "subscriberDir": "src/subscriber"
+    }
+}
