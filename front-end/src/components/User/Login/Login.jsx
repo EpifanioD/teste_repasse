@@ -26,7 +26,7 @@ const UserLogin = () => {
       console.log(token)
       if (token) {
         setToken(token);
-        return history.push('/dashboard');
+        return history.push('/');
       }
 
     } catch (err) {
